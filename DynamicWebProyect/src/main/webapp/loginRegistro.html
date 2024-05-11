@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css\login.css">
+	<link rel="stylesheet" href="css\navegador.css">
+	<link rel="stylesheet" href="css\footer.css">
+	<script src="JS\funcionesIndex.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<nav>
+			<div class="navTop">
+				<div class="navTopRight">
+					<a class="loginIco" href="login.html"><input type="image" src="img/loginIcon.png"></a>
+					<a class="language" href="#">ES</a>
+					<a class="digiIcon" href="index.html"><input type="image" src="img/digiIcon.png"></a>
+				</div>
+
+			</div>
+		</nav>
+	</header>
+	<div id="contenedor">
+		<div id="central">
+			<div id="login">
+				<div class="titulo">
+					Registro
+				</div>
+				<form id="loginform" class="formularioLogin" name="formularioLogin" action="gestionUsuario" method="post">
+					<input type="hidden" id="id" name="id">
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+					<input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+					<input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Nombre del usuario" required>
+					<input type="password" id="contrasena" placeholder="Contrasena" name="contrasena" required=""
+						onkeyup="compararPassword()">
+					<input type="password" id="repPassword" placeholder="Repite contrasena" name="repPassword"
+						required="" onkeyup="compararPassword()">
+					<label class="errorPassword" id="errorPassword"></label>
+					<br></br>
+					<input type="text" id="mail" name="mail" placeholder="Email" required>
+
+					<button type="submit" title="Registrar" name="Ingresar">Registrar</button>
+				</form>
+			</div>
+			<div class="inferior">
+				<a href="index.html">Volver</a>
+			</div>
+		</div>
+	</div>
+	<footer>
+        <div class="footerContenedor">
+            <div class="footerColumna">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footerColumna">
+                <h3>Contacto</h3>
+                <p>Dirección: Calle Falsa 123 , Springfield</p>
+                <p>Teléfono: +123456789</p>
+                <p>Email: alejandro@ejemplo.com</p>
+            </div>
+            <div class="footerColumna">
+                <h3>Síguenos</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="facebook-f"></i></a></li>
+                    <li><a href="#"><i class="twitter"></i></a></li>
+                    <li><a href="#"><i class="instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerAbajo">
+            <p>&copy; 2024 Empresa de Alejandro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

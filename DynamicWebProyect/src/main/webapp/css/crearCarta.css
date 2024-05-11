@@ -1,0 +1,66 @@
+main {
+	background-color: rgb(185, 168, 168);
+	width: 100%;
+	max-height: max-content;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+/* Estilo para el formulario */
+.formulario {
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la lista dentro del formulario */
+.formulario ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+/* Estilo para los elementos de la lista */
+.formulario li {
+    margin-bottom: 15px;
+}
+
+/* Estilo para las etiquetas */
+.formulario label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+    color: #3e3e3e;
+}
+
+/* Estilo para los campos de entrada de texto */
+.formulario input[type="text"],
+.formulario input[type="file"],
+.formulario input[type="submit"] {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="file"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Estilo para el botón de enviar */
+.formulario input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,11 @@
+body {
+	font-weight: normal;
+	/*Anchura de las grosor*/
+	font-size: 100%;
+	/*Tamaño de las letras*/
+	margin: 0;
+	/* Margenes 0*/
+	background-color: rgb(0, 0, 0);
+	max-width: 100%;
+	max-height: 100%;
+}

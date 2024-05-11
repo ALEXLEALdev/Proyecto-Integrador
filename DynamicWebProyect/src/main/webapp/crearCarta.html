@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/body.css">
+	<link rel="stylesheet" href="css/navegador.css">
+	<link rel="stylesheet" href="css/crearCarta.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<script src="JS/funcionesCrearCarta.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<nav>
+			<div class="navTop">
+				<div class="navTopRight">
+					<a class="loginIco" href="login.html"><input type="image" src="img/loginIcon.png"></a>
+					<a class="language" href="#">ES</a>
+					<a class="digiIcon" href="index.html"><input type="image" src="img/digiIcon.png"></a>
+				</div>
+
+			</div>
+			<div class="navBot">
+				<a class="siteLogo" href="index.html" title="Icono de Inicio"><input type="image"
+						src="img/siteLogo.png"></a>
+				<ul class="menu">
+
+					<li class="menuItem">
+						<a title="Usuarios" href="listarUsuarios.html"><input type="image" src="img/usuarioIco.png">Listar usuarios</a>
+					</li>
+
+					<li class="menuItem">
+						<a title="Lista de cartas" href="crearCarta.html"><input type="image" src="img/comprarIco.jpg">Crear carta</a>
+					</li>
+					<li class="menuItem">
+						<a title="Comprar" href="editarCarta.html"><input type="image" src="img/listaIco.png">Editar carta</a>
+					</li>
+					
+				</ul>
+				<div class="icoSocial">
+					<a class="icoW" href="https://t.me/lealdelparagual"><input type="image" src="img/WS.png"></a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<form class="formulario" name="altaCarta" action="gestionCarta" method="post" id="Carta"  enctype="multipart/form-data" >
+			<ul>
+				<input type="hidden" id="id" name="id">
+				<li><label>Nombre: </label> <input type="text" name="nombre" id="nombre"></li>
+				<li><label>Color: </label> <input type="text" name="color" id="color"></li>
+				<li><label>Nivel: </label><input type="text" name="nivel" id="nivel"></li>
+				<li><label>Coste: </label><input type="text" name="coste" id="coste"></li>
+				<li><label>Coste de digievolución: </label><input type="text" name="costeDeDigi" id="costeDeDigi"></li>
+				<li><label>Poder: </label><input type="text" name="poder" id="poder"></li>
+				<li><label>Foto: </label><input type="file" name="foto" id="foto"></li>
+				<li><input type="submit" value="Guadar" onclick="validarFormulario()"></li>
+	
+			</ul>
+		</form>	
+	</main>
+	
+	<footer>
+        <div class="footerContenedor">
+            <div class="footerColumna">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footerColumna">
+                <h3>Contacto</h3>
+                <p>Dirección: Calle Falsa 123 , Springfield</p>
+                <p>Teléfono: +123456789</p>
+                <p>Email: alejandro@ejemplo.com</p>
+            </div>
+            <div class="footerColumna">
+                <h3>Síguenos</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="facebook-f"></i></a></li>
+                    <li><a href="#"><i class="twitter"></i></a></li>
+                    <li><a href="#"><i class="instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerAbajo">
+            <p>&copy; 2024 Empresa de Alejandro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

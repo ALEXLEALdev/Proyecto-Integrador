@@ -1,0 +1,40 @@
+main {
+	background-color: rgb(185, 168, 168);
+	width: 100%;
+	max-height: max-content;
+	
+}
+
+.principalLista {
+	width: 100%;
+}
+
+main .section2 {
+	background-color: rgb(185, 168, 168);
+	width: 100%;
+	padding-top: 20px;
+	/*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+}
+
+.listadoCartas{
+	background-color: rgb(60, 63, 63);
+	width: 70%;
+	display: flex;
+	align-content: flex-start;
+    margin-left: 30px; /* Ajusta el margen derecho según lo necesites */
+    border: 2px solid #ccc; /* Añade un borde para separar visualmente cada carta */
+    padding: 10px; /* Añade un espacio interno para hacerlo más legible */
+    padding-top: 10px;
+}
+
+.listadoCartas p {
+	width:  350px;
+    margin: auto 10px;
+    font-size: 15px; /* Ajusta el tamaño de la fuente de los párrafos dentro de las cartas */
+    color:antiquewhite; /* Cambia el color del texto de los párrafos dentro de las cartas */
+    font-weight: bold;
+}
+
+.listadoCartas input[type="number"] {
+    width: 40px; /* Ajusta el ancho del input de tipo número según sea necesario */    
+}

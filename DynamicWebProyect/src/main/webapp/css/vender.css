@@ -1,0 +1,13 @@
+body {
+	font-family: 'Overpass', sans-serif;
+	/*Fuente de las letras*/
+	font-weight: normal;
+	/*Anchura de las grosor*/
+	font-size: 100%;
+	/*Tamaño de las letras*/
+	color: rgb(255, 255, 128);
+	margin: 0;
+	/* Margenes 0*/
+	background-color: rgb(59, 17, 155);
+	max-width: 100%;
+}

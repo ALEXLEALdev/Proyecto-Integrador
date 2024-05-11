@@ -1,0 +1,81 @@
+main {
+	background-color: rgb(185, 168, 168);
+	width: 100%;
+	padding-bottom: 10px;
+	
+}
+.principalLista {
+	width: 100%;
+}
+
+main .section2 {
+	background-color: rgb(185, 168, 168);
+	width: auto;
+	margin: 10px auto;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	/*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+	gap: 2em;
+}
+
+main .tarjeta {
+    background-color: rgb(60, 63, 63);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgb(99, 97, 98);
+}
+
+.tarjetaFoto img{
+    border-radius: 1em;
+    height: auto;
+}
+
+.tarjetaStats {
+    background-color:rgb(60, 63, 63);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1em;
+}
+
+.nombre {
+    background-color: rgb(255, 255, 255);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.nombreH1 {
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+.cartaStats {
+    background-color: rgb(rgb(60, 63, 63));
+    color: white;
+
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
+
+.parrafoStats {
+    background-color: rgb(187, 177, 170);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+}
+
+.descripcion {
+    background-color: rgb(202, 202, 212);
+    color: rgb(10, 10, 10);
+    padding-top: 1 em;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+}

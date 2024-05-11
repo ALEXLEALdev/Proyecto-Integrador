@@ -1,0 +1,128 @@
+body {
+	font-family: 'Overpass', sans-serif;
+	/*Fuente de las letras*/
+	font-weight: normal;
+	/*Anchura de las grosor*/
+	font-size: 100%;
+	/*Tamaño de las letras*/
+	color: #1b262c;
+	margin: 0;
+	/* Margenes 0*/
+	background-color: rgb(59, 17, 155);
+	max-width: 100%;
+}
+
+.header {
+	background-color: rgb(18, 3, 53);
+	height: 80px;
+	/*Altura*/
+	width: 100%;
+	/*Anchura*/
+	/*position: fixed; /*Posicion tipo fija*/
+	top: 0;
+	/*Arriba del todo*/
+	border-radius: 0px 0px 50px 50px;
+	/*Bordes solo de abajo izq y abajo derecha*/
+	z-index: 10;
+	/*Nivel de profundidad*/
+	order: 1;
+}
+
+nav {
+	height: 70px;
+	/*Misma altura que .header*/
+	margin-inline: 30px;
+	/*Amrgenes de izq y der*/
+	display: flex;
+	/**/
+	align-items: center;
+	/*Centramos eje y*/
+
+}
+
+.menuLogo {
+	margin-left: 2px;
+	position: initial;
+	/*Posicion inicial de izq a der*/
+}
+
+.menu {
+	height: 55px;
+	width: 80%;
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+	/*Centramos eje y*/
+	/*justify-content:space-between; /*Centramos eje x y juntos*/
+	list-style: none;
+	/*Sin puntos en la lista*/
+}
+
+.menuItem {
+	height: 60px;
+	width: 150px;
+	margin: auto;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav .menuItem a {
+	display: flex;
+	color: azure;
+	text-decoration: none;
+	/*Sin barra baja de enlace*/
+	font-weight: bold;
+	/*Estilo de letra negrita*/
+}
+
+nav .menuItem a:hover {
+	border-bottom: 4px solid rgba(74, 137, 196, 0.945);
+	/*Estilo de enlace con tamaño, tipo y color*/
+}
+
+.iconos {
+	height: 60px;
+	width: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around
+}
+
+.ico {
+	display: flex;
+
+}
+
+
+main .section {
+	top: 30px;
+	background-color: rgb(85, 90, 165);
+	;
+	width: 80%;
+	margin: 110px auto;
+	border-radius: 1em;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	padding: 20px;
+	gap: 2em;
+}
+
+main .carta {
+	background-color: rgb(174, 207, 236);
+	padding-inline: 10px;
+	padding-top: 1em;
+	padding-bottom: 2.5em;
+	width: 100%;
+	border-radius: 1em;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+
+}
+
+main .Imagen {
+	width: 300px;
+	margin-inline: auto;
+}

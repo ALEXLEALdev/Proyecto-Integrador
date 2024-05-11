@@ -1,0 +1,47 @@
+main {
+	background-color: rgb(185, 168, 168);
+	width: 100%;
+	max-height: max-content;
+	
+}
+
+.seccion1{
+	width: 100%;
+}
+.principalLista {
+	width: 100%;
+}
+.seccion2{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	
+}
+
+/* Estilo para las celdas de la tabla */
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo para las filas */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fila par en gris */
+}
+
+tr:nth-child(odd) {
+    background-color: #fff; /* Fila impar en blanco */
+}
+
+/* Estilo para los enlaces */
+a {
+    color: rgb(0, 0, 128);
+
+}
+
+/* Estilo para los enlaces al pasar el cursor */
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
