@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css\navegador.css">
     <link rel="stylesheet" href="css\carta.css">
     <link rel="stylesheet" href="css\footer.css">
-    <script src="JS/funcionesLista.js"></script>
+    <script src="JS/funcionesSlider.js"></script>
 </head>
 
 <body>
@@ -51,7 +51,13 @@
     </header>
     <main>
         <section class="section1">
-            <img class="principalLista" src="img/sliders/slider3.jpg" alt="Imagen de la carta">
+            <div class="slider">
+                <div class="contenedorSlider">
+                    <img class="slide" id ="sliderPrincipal" src="img/sliders/slider1.jpg" alt="Imagen de la carta">
+                </div>
+                <button class="flechaIzq" id="flechaIzq">&#10094;</button>
+                <button class="flechaDer" id="flechaDer">&#10095;</button>
+            </div>
         </section>
 
 
@@ -112,6 +118,8 @@
         <div class="footerAbajo">
             <p>&copy; 2024 Empresa de Alejandro. Todos los derechos reservados.</p>
         </div>
+        <img class="slide" id ="slider2" src="img/sliders/slider2.jpg" alt="Imagen de la carta">
+        <img class="slide" id ="slider3" src="img/sliders/slider3.jpg" alt="Imagen de la carta">
     </footer>
 </body>
 
