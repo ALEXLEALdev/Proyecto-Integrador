@@ -7,9 +7,9 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/body.css">
 	<link rel="stylesheet" href="css/navegador.css">
-	<link rel="stylesheet" href="css/crearCarta.css">
+	<link rel="stylesheet" href="css/editarCarta.css">
 	<link rel="stylesheet" href="css/footer.css">
-	<script src="JS/funcionesCrearCarta.js"></script>
+	<script src="JS/funcionesEditarSlider.js"></script>
 </head>
 
 <body>
@@ -53,20 +53,14 @@
 	</header>
 
 	<main>
-		<form class="formulario" name="altaCarta" action="gestionCarta" method="post" id="Carta"  enctype="multipart/form-data" >
-			<ul>
-				<input type="hidden" id="id" name="id">
-				<li><label>Nombre: </label> <input type="text" name="nombre" id="nombre"></li>
-				<li><label>Color: </label> <input type="text" name="color" id="color"></li>
-				<li><label>Nivel: </label><input type="text" name="nivel" id="nivel"></li>
-				<li><label>Coste: </label><input type="text" name="coste" id="coste"></li>
-				<li><label>Coste de digievolución: </label><input type="text" name="costeDeDigi" id="costeDeDigi"></li>
-				<li><label>Poder: </label><input type="text" name="poder" id="poder"></li>
-				<li><label>Foto: </label><input type="file" name="foto" id="foto"></li>
-				<li><input type="submit" value="Guadar" onclick="validarFormulario()"></li>
-	
-			</ul>
-		</form>	
+		<section class="seccion1">
+			<img class="principalLista" src="img/sliders/slider5.jpg" alt="Imagen de la carta">
+		</section>
+		
+		
+		<section class="seccion2">
+			<div id="listadoSliders"></div>
+		</section>		
 	</main>
 	
 	<footer>
@@ -99,7 +93,11 @@
             <p>&copy; 2024 Empresa de Alejandro. Todos los derechos reservados.</p>
         </div>
     </footer>
+	<aside class="aside1"></aside>
 
+	<aside class="aside2"></aside>
+
+	<footer class="footer1"></footer>
 </body>
 
 </html>

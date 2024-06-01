@@ -49,4 +49,14 @@
     <servlet-name>gestionCesta</servlet-name>
     <url-pattern>/gestionCesta</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>gestionSlider</display-name>
+    <servlet-name>gestionSlider</servlet-name>
+    <servlet-class>controlador.gestionSlider</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>gestionSlider</servlet-name>
+    <url-pattern>/gestionSlider</url-pattern>
+  </servlet-mapping>
 </web-app>

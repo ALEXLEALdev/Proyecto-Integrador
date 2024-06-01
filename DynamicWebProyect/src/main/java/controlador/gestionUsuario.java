@@ -34,64 +34,57 @@ public class gestionUsuario extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-		sesion = request.getSession();
+		HttpSession sesion = request.getSession();
 		Integer idSesion = (Integer) sesion.getAttribute("id");
 
-
-		//if(idSesion == null) {
+		// if(idSesion == null) {
 
 		PrintWriter out = response.getWriter();
 
 		String opParam = request.getParameter("op");
 
 		if (opParam != null && !opParam.isEmpty()) {
-			int opcion = Integer.parseInt(opParam);
+		    int opcion = Integer.parseInt(opParam);
 
-			if(opcion==3) {
-				try {
-					int id = Integer.parseInt(request.getParameter("id"));
-					DaoUsuario u= new DaoUsuario();
-					u.borrar(id);
-					System.out.println("Estoy borrando " + id);
-					System.out.println("Estoy opcion " + opcion);
-					out.print(u.listarJson());
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+		    try {
+		        switch (opcion) {
+		            case 1:
+		                DaoUsuario usuarios1 = new DaoUsuario();
+		                out.print(usuarios1.listarJson());
+		                break;
 
-			}else if(opcion == 2) {
-				//proceso logica edicion
-				int id = Integer.parseInt(request.getParameter("id"));
+		            case 2:
+		                int id2 = Integer.parseInt(request.getParameter("id"));
+		                Usuario u2 = new Usuario();
+		                u2.obtenerPorId(id2);
+		                out.print(u2.dameJson());
+		                System.out.println(u2.dameJson());
+		                break;
 
-				Usuario u = new Usuario();
-				try {
-					u.obtenerPorId(id);
-					out.print(u.dameJson());
-					System.out.println(u.dameJson());
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}		
+		            case 3:
+		                int id3 = Integer.parseInt(request.getParameter("id"));
+		                DaoUsuario u3 = new DaoUsuario();
+		                u3.borrar(id3);
+		                System.out.println("Estoy borrando " + id3);
+		                System.out.println("Estoy opcion " + opcion);
+		                out.print(u3.listarJson());
+		                break;
 
-			}else if(opcion==1) {
-				DaoUsuario usuarios;
-				try {
-					usuarios = new DaoUsuario();
-					out.print(usuarios.listarJson());
-
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-		}	
-		//}else {
-		//	System.out.println("No puedes entrar");
-		//	response.sendRedirect("login.html");
-		//}
+		            default:
+		                out.print("Opción no válida");
+		                break;
+		        }
+		    } catch (SQLException e) {
+		        e.printStackTrace();
+		        out.print("Error en la operación: " + e.getMessage());
+		    }
+		}
 	}
 
+		// } else {
+		//	System.out.println("No puedes entrar");
+		//	response.sendRedirect("login.html");
+		// }
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)

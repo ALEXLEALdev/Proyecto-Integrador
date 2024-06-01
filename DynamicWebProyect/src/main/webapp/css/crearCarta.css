@@ -35,7 +35,9 @@ main {
     font-weight: bold;
     color: #3e3e3e;
 }
-
+.formulario select{
+	width: 200px;
+}
 /* Estilo para los campos de entrada de texto */
 .formulario input[type="text"],
 .formulario input[type="file"],

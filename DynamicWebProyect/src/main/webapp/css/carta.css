@@ -4,8 +4,44 @@ main {
 	padding-bottom: 10px;
 	
 }
-.principalLista {
-	width: 100%;
+.section1 {
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+}
+
+.slider-container {
+    display: flex;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.flechIzq {
+    left: 0;
+}
+
+.flechaDer {
+    right: 0;
 }
 
 main .section2 {
