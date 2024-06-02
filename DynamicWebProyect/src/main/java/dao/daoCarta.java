@@ -251,4 +251,39 @@ public class daoCarta {
         ResultSet rs = ps.executeQuery();
 
         ArrayList<Carta> ls = new ArrayList<>();
-        while (rs
+        while (rs.next()) {
+            ls.add(new Carta(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4),
+                    rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8)));
+        }
+        return ls;
+    }
+
+
+public String listarAmarillos() throws SQLException {
+    String json = "";
+    Gson gson = new Gson();
+    json = gson.toJson(this.filtroAmarillo());
+    return json;
+}
+
+public ArrayList<Carta> filtroVerde() throws SQLException {
+    String sql = "SELECT id, nombre, color, nivel, coste, costeDeDigi, poder, foto FROM cartas WHERE color='Amarillo'";
+    PreparedStatement ps = con.prepareStatement(sql);
+    ResultSet rs = ps.executeQuery();
+
+    ArrayList<Carta> ls = new ArrayList<>();
+    while (rs.next()) {
+        ls.add(new Carta(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4),
+                rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8)));
+    }
+    return ls;
+}
+
+
+public String listarVerdes() throws SQLException {
+String json = "";
+Gson gson = new Gson();
+json = gson.toJson(this.filtroVerde());
+return json;
+}
+}

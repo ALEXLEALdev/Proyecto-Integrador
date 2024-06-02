@@ -279,7 +279,7 @@ public class Carta {
      */
     public void obtenerPorID(int id) throws SQLException {
         daoCarta dao = new daoCarta();
-        Carta aux = dao.obterenPorID(id);
+        Carta aux = dao.obtenerPorID(id);
         this.setId(aux.getId());
         this.setNombre(aux.getNombre());
         this.setColor(aux.getColor());

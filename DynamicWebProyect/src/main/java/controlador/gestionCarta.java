@@ -85,12 +85,12 @@ public class gestionCarta extends HttpServlet {
 
                     case 6:
                         daoCarta cartas6 = new daoCarta();
-                        out.print(cartas6.listarAmarillo());
+                        out.print(cartas6.listarAmarillos());
                         break;
 
                     case 7:
                         daoCarta cartas7 = new daoCarta();
-                        out.print(cartas7.listarVerde());
+                        out.print(cartas7.listarVerdes());
                         break;
 
                     default:
@@ -139,14 +139,14 @@ public class gestionCarta extends HttpServlet {
 
         Carta c = new Carta(nombre, color, nivel, coste, costeDeDigi, poder, fileName);
         try {
-            if (id == "") {
+        	if (id == null || id.isEmpty()) {
                 c.insertar();
                 response.sendRedirect("crarCarta.html");
             } else {
                 int idInt = Integer.parseInt(id);
                 c.setId(idInt);
                 c.actualizar();
-                response.sendRedirect("lista.html");
+                response.sendRedirect("editarCarta.html");
             }
         } catch (SQLException e) {
             e.printStackTrace();

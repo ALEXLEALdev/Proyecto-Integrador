@@ -104,8 +104,8 @@ public class Usuario {
      * @param nombreUsuario Nombre de usuario.
      * @param contrasena   Contraseña del usuario.
      */
-    public Usuario(String nombreUsuario, String contrasena) {
-        this.nombreUsuario = nombreUsuario;
+    public Usuario(String mail, String contrasena) {
+        this.mail = mail;
         this.contrasena = contrasena;
     }
 
@@ -326,4 +326,6 @@ public class Usuario {
     @Override
     public String toString() {
         return "Usuario [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", nombreUsuario="
-                + nombreUsuario + ", contrasena=" + contrasena + ", mail="
+                + nombreUsuario + ", contrasena=" + contrasena + ", mail=";
+    }
+}
